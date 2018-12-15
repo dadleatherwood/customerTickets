@@ -1,13 +1,20 @@
-Customer First Name : <input type=text/>
-Customer Last Name : <input type=text/> <br>
-Customer Email : <input type=email/> <br>
-Ticket Subject : <input type=text/> <br>
-Ticket Priority : <select name="priority">
+Customer First Name : <input [(ngModel)]='CustomerModel.CustomerFirstName' type=text/>
+Customer Last Name : <input [(ngModel)]='CustomerModel.CustomerLasttName' type=text/> <br>
+Customer Email : <input [(ngModel)]='CustomerModel.CustomerEmail' type=email/> <br>
+Ticket Subject : <input [(ngModel)]='CustomerModel.TicketSubject' type=text/> <br>
+Ticket Priority : <select [(ngModel)]='CustomerModel.TicketPriority' name="priority">
   <option value=""></option>
   <option value="low">Low</option>
   <option value="medium">Medium</option>
   <option value="high">High</option>
 </select><br>
-Description of Issue : <textarea rows=5 cols=30></textarea>
+Description of Issue : <textarea rows=5 cols=30 [(ngModel)]='CustomerModel.TicketDescription' ></textarea>
 <input type=button value="Submit"/>
+<br>
+<br>
+First Name: {{CustomerModel.CustomerFirstName}}<br>
+Last Name: {{CustomerModel.CustomerLasttName}}<br>
+Email: {{CustomerModel.CustomerEmail}}<br>
+Ticket Subject: {{CustomerModel.TicketSubject}}<br>
+Ticket Priority: {{CustomerModel.TicketPriority}}<br>
 
