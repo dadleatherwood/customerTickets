@@ -9,12 +9,30 @@ Ticket Priority : <select [(ngModel)]='CustomerModel.TicketPriority' name="prior
   <option value="high">High</option>
 </select><br>
 Description of Issue : <textarea rows=5 cols=30 [(ngModel)]='CustomerModel.TicketDescription' ></textarea>
-<input type=button value="Submit"/>
+<input (click)="Add()" type=button value="Submit"/><br>
+{{CustomerModel.CustomerFirstName}}<br>
+{{CustomerModel.CustomerLasttName}}<br>
+{{CustomerModel.CustomerEmail}}<br>
+{{CustomerModel.TicketSubject}}<br>
+{{CustomerModel.TicketPriority}}<br>
+{{CustomerModel.TicketDescription}}
 <br>
-<br>
-First Name: {{CustomerModel.CustomerFirstName}}<br>
-Last Name: {{CustomerModel.CustomerLasttName}}<br>
-Email: {{CustomerModel.CustomerEmail}}<br>
-Ticket Subject: {{CustomerModel.TicketSubject}}<br>
-Ticket Priority: {{CustomerModel.TicketPriority}}<br>
+<table>
+  <tr>
+    <td>First Name</td>
+    <td>Last Name</td>
+    <td>Email</td>
+    <td>Ticket Subject</td>
+    <td>Ticket Priority</td>
+    <td>Ticket Description</td>
+  </tr>
+  <tr *ngFor="let cust of CustomerModels">
+      <td>{{cust.CustomerFirstName}}</td>
+      <td>{{cust.CustomerLasttName}}</td>
+      <td>{{cust.CustomerEmail}}</td>
+      <td>{{cust.TicketSubject}}</td>
+      <td>{{cust.TicketPriority}}</td>
+      <td>{{cust.TicketDescription}}</td>
+  </tr>
+</table>
 
