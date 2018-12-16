@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Customer } from './app.model'
+import { Customer } from '../customer-ticket/app.customer-ticket-model'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.view.html',
+  templateUrl: './app.customer-ticket-view.html',
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
