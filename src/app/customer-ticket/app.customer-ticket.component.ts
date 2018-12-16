@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 import { Customer } from './app.customer-ticket-model'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.customer-ticket-view.html',
-  styleUrls: ['./app.component.less']
+  templateUrl: './app.customer-ticket-view.html'
 })
 export class AppComponent {
   title = 'customerTickets';
