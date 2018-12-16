@@ -4,7 +4,7 @@ import { Customer } from './app.customer-ticket-model'
 @Component({
   templateUrl: './app.customer-ticket-view.html'
 })
-export class AppComponent {
+export class CustomerTicketComponent {
   title = 'customerTickets';
   CustomerModel : Customer = new Customer();
   CustomerModels : Array<Customer> = new Array<Customer>();
