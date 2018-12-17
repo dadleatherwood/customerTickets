@@ -1,9 +1,12 @@
-<img src="src/assets/Armor_Logo_Orange_Tagline.png"><br>
-    <a [routerLink]="['Home']">Home</a><br>
-    <a [routerLink]="['Dashboard']">Dashboard</a><br>
-    <a [routerLink]="['Score']">Score</a><br>
-    <a [routerLink]="['CustomerSupport']">Customer Support</a><br>
-Links
-    <div>
-        <router-outlet></router-outlet>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:black">
+    <div class="navbar-nav">
+        <img src="./assets/Armor_Logo_Orange_Tagline.png" height="32" width="82">
+        <a class="nav-item nav-link" style="color: dimgray; padding: 10px; text-decoration: none;"  [routerLink]="['Dashboard']">Dashboard</a>
+        <a class="nav-item nav-link" style="color: dimgray; padding: 10px; text-decoration: none;"  [routerLink]="['Score']">Score</a>
+        <a class="nav-item nav-link" style="color: dimgray; padding: 10px; text-decoration: none;"  [routerLink]="['CustomerSupport']">Customer Support</a>
     </div>
+</nav>
+
+<div>
+    <router-outlet></router-outlet>
+</div>

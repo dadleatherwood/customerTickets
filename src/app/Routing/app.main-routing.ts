@@ -8,5 +8,5 @@ export const MainRoutes = [
   {path: 'Dashboard', component: DashboardComponent}, 
   {path: 'Score', component: ScoreComponent},
   {path: 'CustomerSupport',component: CustomerTicketComponent},
-  {path: '', component: HomeComponent} 
+  {path: '', component: CustomerTicketComponent} 
 ]
