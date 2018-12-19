@@ -36,5 +36,17 @@ export class Customer {
 
       this.formCustomerGroup.addControl("CustomerEmailControl", new FormControl('',Validators.compose(validationcollection)))
     }
+    calculateWaitTime () {
+      switch (this.TicketPriority.toLowerCase()) {
+        case 'high' : 
+          return '4 hours';
+        case 'medium' : 
+          return '24 hours';
+        case 'low' : 
+          return '48 hours';
+        default:
+          return 'until the end of time';
+      }
+    }
   }
 
